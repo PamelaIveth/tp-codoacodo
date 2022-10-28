@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="icon" href="code.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+
+        <nav class="nav-main">
+            <img id="titulo" src="icono.png" class="nav-icono" alt="Icono">
+            <ul class="nav-menu">
+                <li><a href="index.html"><b>Inicio</b></a></li>
+                <li><a href="contenido.html"><b>Html</b></a></li>
+                <li><a href=""><b>Css</b></a></li>
+                <li><a href=""><b>Java Script</b></a></li>
+                <li><a href=""><b>Git/Git Hub</b></a></li>
+            </ul>
+        </nav>
+
+
+        <section class="intro">
+            <div class="internet">
+                <p><a href="contenido.html" class="unidad">Introducción a HTML</a> / Unidad 2</p>
+                <h1>6. Listas</h1><br>
+            </div>
+            <div class="paginas">
+                <div class="pagina-i">
+                    <article>
+                        <p>
+                            Listas en HTML
+                        </p>
+                        <p>
+                            Las posibilidades que nos ofrece HTML en cuestión de tratamiento de texto son realmente
+                            notables. No se limitan a lo visto hasta ahora, sino que van más lejos todavía. Varios
+                            ejemplos de ello son las listas, que sirven para enumerar y definir elementos, los textos
+                            preformateados y las cabeceras o títulos.
+                        </p>
+                        <p>
+                            Las listas originalmente están pensadas para citar, enumerar y definir cosas a través de
+                            características, o al menos así lo hacemos en la escritura de textos. Sin embargo, las
+                            listas finalmente se utilizan para mucho más que enumerar una serie de puntos, en realidad
+                            son un recurso muy interesante para poder maquetar elementos diversos, como barras de
+                            navegación, pestañas, etc. Pero esto lo veremos más adelante, al aplicar estilos CSS a las
+                            listas.
+                        </p>
+                        <p>
+                            Podemos distinguir tres tipos de listas HTML:
+                        </p>
+                        <p>
+                            - Listas desordenadas <br>
+
+                            - Listas ordenadas <br>
+
+                            - Listas de definición
+                        </p>
+                        <p>
+                            Listas desordenadas
+                        </p>
+                        <p>
+                            Son delimitadas por las etiquetas UL y su cierre (Unordered List). Cada uno de los elementos
+                            de la lista es citado por medio de una etiqueta LI ( LI tiene su cierre, aunque si no lo
+                            colocas el navegador al ver el siguiente LI interpretará que estás cerrando el anterior). Un
+                            ejemplo es:
+                        </p>
+                        <p>
+                            <img src="lista1.png" width="350px">
+                        </p>
+                        <p>
+
+
+                            Podemos definir el tipo de viñeta empleada para cada elemento. Para ello debemos
+                            especificarlo por medio del atributo type incluido dentro de la etiqueta de apertura UL, si
+                            queremos que el estilo sea válido para toda la lista; o dentro de la etiqueta LI si queremos
+                            hacerlo específico de un solo elemento. La sintaxis es del siguiente tipo:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">ul</span><span id="subcode"> type</span>= <span id="sub-code">"tipo de viñeta"</span>&gt;</code>
+
+                        </p>
+                        <p>
+                            donde tipo de viñeta puede ser uno de los siguientes:
+                        </p>
+                        <p>
+                            circle <br>
+
+                            disc <br>
+
+                            square
+                        </p>
+                        <p> <em>
+                            Nota: en algunos navegadores no funciona la opción de cambiar el tipo de viñeta a
+                            mostrar y por mucho que nos empeñemos, siempre saldrá el círculo negro. </em>
+                        </p>
+                        <p>
+                            En caso de que no funcione siempre podemos construir la lista a mano con la viñeta que
+                            queramos utilizando CSS.
+                        </p>
+                        <p>
+                            Vamos a ver un ejemplo de lista con un cuadrado, y en el último elemento colocaremos un
+                            círculo. Para ello vamos a colocar el atributo type en la etiqueta UL, con lo que
+                            afectará a todos los elementos de la lista.
+                        </p>
+                        <p>
+                            <img src="lista2.png" width="400px">
+                        </p>
+                        <p>
+
+
+                            Listas ordenadas
+                        </p>
+                        <p>
+                            Las listas ordenadas sirven también para presentar información, en diversos elementos o
+                            ítems, con la particularidad que éstos estarán precedidos de un número o una letra para
+                            enumerarlos, siempre por un orden.
+                        </p>
+                        <p>
+                            Para realizar las listas ordenadas usaremos las etiquetas OL (Ordered List) y su cierre.
+                            Cada elemento será igualmente indicado por la etiqueta LI, que ya vimos en las listas
+                            desordenadas.
+                        </p>
+                        <p>
+                            Pongamos un ejemplo:
+                        </p>
+                        <p><img src="lista3.png" width="400px"></p>
+                        <p>
+
+
+                            Saldría en pantalla:
+                        </p>
+                        <p>
+                            Reglas de convivencia
+                        </p>
+                        <p>
+                            No hacer ruidos molestos <br>
+
+                            Ser amable con los vecinos
+                        </p>
+                        <p>
+                            Del mismo modo que para las listas desordenadas, las listas ordenadas ofrecen la
+                            posibilidad de modificar el estilo. En concreto nos es posible especificar el tipo de
+                            numeración empleado eligiendo entre números (1, 2, 3...), letras minúsculas (a, b, c...)
+                            y sus mayúsculas (A, B, C,...) y números romanos en sus versiones mayúsculas (I, II,
+                            III...) y minúsculas (i, ii, iii...).
+                        </p>
+                        <p>
+                            Para realizar dicha selección hemos de utilizar, como para el caso precedente, el
+                            atributo type, el cual estará situado dentro de la etiqueta OL. Los valores que puede
+                            tomar el atributo en este caso son:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">ol</span>&gt;</code> números (1, 2, 3...)
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">ol</span><span id="subcode"> type</span>= <span id="sub-code">"A"</span>&gt;</code>
+                            mayúsculas (A, B, C,...)
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">ol</span><span id="subcode"> type</span>= <span id="sub-code">"a"</span>&gt;</code>
+                            minúsculas
+                            (a, b, c...)
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">ol</span><span id="subcode"> type</span>= <span id="sub-code">"I"</span>&gt;</code>
+                            mayúsculas
+                            (I, II, III,...)
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">ol</span><span id="subcode"> type</span>= <span id="sub-code">"i"</span>&gt;</code>
+                            minúsculas
+                            (i, ii, iii,...)
+                        </p>
+                        <p><em>
+                            Nota: recordamos que en algunos navegadores no funciona la opción de
+                            cambiar el tipo de viñeta a mostrar. </em>
+                        </p>
+                        <p>
+                            Puede que en algún caso deseemos comenzar nuestra enumeración por un
+                            número o letra que no tiene por qué ser necesariamente el primero de
+                            todos. Para ello podemos utilizar un segundo atributo, llamado
+                            start, que tendrá como valor un número.
+                        </p>
+                        <p>
+                            Este número, que por defecto es 1, corresponde al valor a partir del
+                            cual comenzamos a definir nuestra lista. Para el caso de las letras
+                            o los números romanos, el navegador se encarga de hacer la
+                            traducción del número a la letra correspondiente.
+                        </p>
+                        <p><img src="lista4.png" width="400px"></p>
+                        <p>
+
+
+                            Nos arrojaría en pantalla:
+                        </p>
+
+                        <p>
+                            Reglas de convivencia
+                        </p>
+                        <p>
+                            B. No hacer ruidos molestos <br>
+
+                            C. Ser amable con los vecinos
+                        </p>
+                        <p>
+                            Listas de definición
+                        </p>
+                        <p>
+                            Las listas de definición sirven para hacer un conjunto de elementos
+                            con pares concepto-descripción. Es decir, se especificarán varios
+                            términos por su nombre y se escribirá una definición para cada uno.
+                            Cada elemento es presentado junto con su definición, uno detrás de
+                            otro.
+                        </p>
+                        <p>
+                            Para realizar una lista de definición, la etiqueta principal es DL y
+                            su cierre (Definition List). La etiquetas del elemento y su
+                            definición son DT (Definition Term) y DD (Definition Definition)
+                            respectivamente.
+                        </p>
+                        <p>
+                            Aquí un código de ejemplo y su resultado:
+                        </p>
+                        <p><img src="lista5.png" width="300px"></p>
+                        <p>
+
+
+                            El resultado obtenido:
+                        </p>
+
+                        <p>
+                            Alimentos Lácteos
+                        </p>
+                        <p style="text-transform:uppercase;">
+                            Leche <br>
+
+                            descremada <br>
+
+                            entera <br>
+
+                            Queso <br>
+
+                            Fontina <br>
+
+                            Muzzarella
+                        </p>
+                        <p>
+                            Veremos que cada línea DD se ubica más hacia la izquierda. Este tipo
+                            de etiquetas son usadas a menudo con el propósito de crear textos
+                            más o menos desplazados hacia la izquierda.
+                        </p>
+                        <p>
+                            Anidando listas
+                        </p>
+                        <p>
+                            Podemos anidar estas etiquetas obteniendo listas de la manera
+                            deseada, como por ejemplo:
+                        </p>
+                        <p><img src="lista6.png" width="300px"></p>
+                        <p>
+
+
+                            obteniendo:
+                        </p>
+
+                        <p>
+                            Ciudades del mundo
+                        </p>
+                        <p>
+                            Argentina
+                            <br>
+                            1. Buenos Aires
+                            <br>
+                            2. Bariloche
+                            <br>
+                            Uruguay
+                            <br>
+                            1. Montevideo
+                            <br>
+                            2. Punta del Este
+
+
+                        </p><br>
+                        <p id="fuente">Fuente: Curso Fullstack Phyton del programa Codo a Codo
+                        </p>
+                        <hr>
+                    </article>
+                    <div class="final">
+                        <a href="u2favicon.html"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="#titulo"><i class="fa-solid fa-arrow-up"></i></a>
+                        <a href="u2tablas.html"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="pagina-d">
+
+                    <nav>
+                        <h4>Indice de contenidos</h4><br>
+                        <hr><br>
+                        <ul>
+                            <!--target="_blank" para abrir en otra pagina continuandoel href-->
+                            <li><a href="u2formatotexto.html">1. Formato de texto</a></li>
+                            <li><a href="u2atributo.html">2. Atributo de páginas</a></li>
+                            <li><a href="u2enlaces.html">3. Enlaces</a></li>
+                            <li><a href="u2formatografico.html">4. Formatos gráficos</a></li>
+                            <li><a href="u2imagenes.html">5. Imágenes en HTML</a></li>
+                            <ul>
+
+                                <li><a href="u2favicon.html">5.1. Favicon</a></li>
+                            </ul>
+                            <li><a href="u2listas.html">6. Listas</a></li>
+                            <li><a href="u2tablas.html">7. Tablas</a></li>
+                            <li><a href="u2iframes.html">8. Iframe</a></li>
+                            <li><a href="u2elementos.html">9. Elementos en bloque y en línea</a></li>
+                            <li><a href="u2formularios.html">10. Formularios en HTML</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <a href="index.html">Ir a la pagina principal</a>
+            <p>Diseñado por Grupo16 del curso de fullstack phyton del programa codo a codo</p>
+
+
+            <p>Copyright 2022</p>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

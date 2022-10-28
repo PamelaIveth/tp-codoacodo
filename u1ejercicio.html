@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="icon" href="code.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+
+        <nav class="nav-main">
+            <img id="titulo" src="icono.png" class="nav-icono" alt="Icono">
+            <ul class="nav-menu">
+                <li><a href="index.html"><b>Inicio</b></a></li>
+                <li><a href="contenido.html"><b>Html</b></a></li>
+                <li><a href=""><b>Css</b></a></li>
+                <li><a href=""><b>Java Script</b></a></li>
+                <li><a href=""><b>Git/Git Hub</b></a></li>
+            </ul>
+        </nav>
+
+
+        <section class="intro">
+            <div class="internet">
+                <p><a href="contenido.html" class="unidad">Introducción a HTML</a> / Unidad 1</p>
+                <h1>2.2. Primer Ejercicio</h1><br>
+            </div>
+            <div class="paginas">
+                <div class="pagina-i">
+                    <article>
+                        <p> Tu primera página HTML </p>
+                        <p>
+
+                            Vamos a ver cómo se hace una página muy sencilla en HTML, que sirva de práctica a quienes
+                            recién comienzan con esta forma de codificar.
+                        </p>
+                        <p>
+                            Solo hemos comenzado a ver solo un poco de HTML, pero ya podemos hacer un primer ejemplo
+                            para darnos una idea de que se trata. Con lo visto hasta ahora ya casi estamos listos para
+                            practicar, aunque todavía tenemos que adquirir algún conocimiento adicional.
+                        </p>
+                        <p>
+                            No te olvides ahora de practicar, así que usa tu editor de código preferido. Por ejemplo, se
+                            puedo comenzar con el editor online de http://html5-editor.net/ que es una gran ayuda para
+                            crear por tu cuenta los ejercicios que vamos a ir realizando.
+                        </p>
+                        <p>
+                            Recuerda que la práctica es la mejor vía para afianzar los conocimientos.
+                        </p>
+                        <p>
+                            Anteriormente ya adelantamos la forma de un documento HTML básico, con sus etiquetas de
+                            cabecera y cuerpo. No obstante, si deseamos seguir las pautas técnicas más estrictas, aún
+                            tenemos que agregar alguna cosa adicional para que todo funcione de la mejor manera.
+                        </p>
+                        <p>
+
+
+                            Doctype
+                        </p>
+                        <p>
+                            Reconozco que el "doctype" no es la etiqueta más intuitiva, pero debemos mencionarla ahora
+                            porque es el inicio de cualquier archivo HTML. Viene heredada del XML, que es un lenguaje
+                            precursor del HTML. En el pasado la etiqueta Doctype era bastante más compleja, pero
+                            afortunadamente con la llegada de HTML5 se simplificó para quedar simplemente como esto:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">!DOCTYPE<span id="subcode"> html</span></span>&gt;</code><br>
+                        </p>
+                        <p>
+                            El Doctype o “Declaración del tipo de documento” es una instrucción especial que va al
+                            inicio de nuestro documento HTML y que permite al navegador entender qué versión de HTML
+                            estamos utilizando. Esta información determinará la manera en la que el navegador procesa el
+                            documento, un DOCTYPE distinto podría implicar hasta una visualización diferente del sitio
+                            web dentro del mismo navegador.
+
+                        </p>
+                        <p>
+
+                            Juego de caracteres
+                        </p>
+                        <p>
+                            El juego de caracteres es otro asunto que puede parecer un poco complejo, pero que tenerlo
+                            claro desde el principio te ayudará a no pasar en el futuro por diversos problemas. <br>
+                            Este juego de caracteres, o codificación, depende del sistema operativo que estás usando
+                            para crear tu archivo HTML. Mientras que unos sistemas como Linux o Mac usan por defecto un
+                            juego de caracteres llamado UTF-8, en Windows se usa de manera predeterminada otro juego de
+                            caracteres llamado ISO-8859-1. Parece una información un tanto técnica y fuera de necesidad
+                            para introducir ahora que estamos comenzando, pero insistimos que nos ahorrará frustraciones
+                            al dar los primeros pasos, pero sobre todo en un futuro.
+                        </p>
+                        <p>
+                            En HTML5 el juego de caracteres a usar es siempre UTF-8. Por lo que tendremos que tener
+                            especial atención si somos usuarios de Windows, para asegurarnos que usamos la codificación
+                            correcta. Por ejemplo, Brackets o Atom (editores de código), trabajan siempre en UTF-8,
+                            independientemente del sistema operativo. Si no estás usando uno de esos editores, te
+                            recomendamos que los investigues y si queres trabajar con tu propio editor infórmate sobre
+                            el juego de caracteres que produce y si existe alguna opción o configuración que te asegure
+                            usar siempre UTF-8.
+                        </p>
+                        <p>
+                            Para definir qué juego de caracteres estamos usando en un documento HTML se tiene que
+                            escribir una etiqueta en la cabecera de la página, en el HEAD, llamada META. Realmente las
+                            etiquetas META las trataremos más adelante, porque sirven para varias cosas interesantes.
+                            Pero de momento nos aseguraremos que tenemos esta etiqueta en el head.
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">meta</span><span id="subcode"> charset</span>= <span id="sub-code">"UTF-8"</span>&gt;</code><br>
+                        </p>
+                        <p>
+                            Igualmente, no pretendemos hablar mucho de esta etiqueta por el momento, solo que te la
+                            tomes como un contrato a cumplir para tener un documento correcto.
+                        </p>
+                        <p>
+                            A continuación tienes un documento básico con las etiquetas necesarias para comenzar con un
+                            código completo.
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">!DOCTYPE<span id="subcode"> html</span></span>&gt;</code><br>
+                            <code>&lt;<span id="code">html</span><span id="subcode"> lang</span>= <span id="sub-code">"en"</span>&gt;</code><br>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">head</span>&gt;</code><br>
+                            <code>&lt;<span id="code">meta</span><span id="subcode"> charset</span>= <span id="sub-code">"UTF-8"</span>&gt;</code><br>
+                            <code>&lt;<span id="code">title</span>&gt;</code>Mi primera
+                            página<code>&lt;<span id="code">/title</span>&gt;</code><br>
+                            <code>&lt;<span id="code">/head</span>&gt;</code><br>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">body</span>&gt;</code><br>
+                            <code>&lt;<span id="code">p</span>&gt;</code><code>&lt;<span id="code">b</span>&gt;</code>Bienvenido<code>&lt;<span id="code">/b</span>&gt;</code><code>&lt;<span id="code">/p</span>&gt;</code><br>
+                            <code>&lt;<span id="code">p</span>&gt;</code>Estás en la página
+                            <code>&lt;<span id="code">b</span>&gt;</code>Comida para Todos los
+                            gustos.<code>&lt;<span id="code">/b</span>&gt;</code><code>&lt;<span id="code">/p</span>&gt;</code><br>
+                            <code>&lt;<span id="code">p</span>&gt;</code>Aquí aprenderás recetas fáciles y
+                            deliciosas.<code>&lt;<span id="code">/p</span>&gt;</code><br>
+                            <code>&lt;<span id="code">/body</span>&gt;</code><br>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">/html</span>&gt;</code>
+                        </p>
+                        <p>
+                            Puedes copiar y pegarlo en tu editor de código. Ahora guarda ese archivo con extensión .html
+                            en tu compu. Para ello accedemos al menú Archivo y seleccionamos la opción Guardar como. En
+                            la ventana elegimos el directorio donde deseamos guardarlo y colocaremos su nombre, por
+                            ejemplo ejercicio1.html
+                        </p>
+                        <p>
+                            <em>Consejo: Utiliza nombres en tus archivos que tengan algunas normas básicas para
+                                ahorrarte disgustos y líos. </em>
+                        </p>
+                        <p>
+                            Nuestro consejo es que no utilices acentos ni espacios ni otros caracteres raros. También te
+                            ayudará escribir siempre las letras en minúsculas. Esto no quiere decir que debes hacer
+                            nombres de archivos cortos, es mejor hacerlos descriptivos para que te aclaren lo que hay
+                            dentro. Algún caracter como el guión medio "-" te puede ayudar a separar las palabras. Por
+                            ejemplo quienes-somos.html
+                        </p>
+                        <p>
+                            Con el documento HTML creado, podemos ver el resultado obtenido a partir de un navegador.
+                        </p>
+                        <p>
+                            Es conveniente, llegado a este punto, hacer hincapié en el hecho de que no todos los
+                            navegadores son idénticos a la hora de interpretar un documento. Desgraciadamente, los
+                            resultados de nuestro código pueden cambiar de uno a otro por lo que resulta aconsejable
+                            visualizar la página en varios clientes web. Generalmente se usan Chrome, Internet Explorer,
+                            Microsoft Edge y Firefox como referencias ya que son los más extendidos. Si usas Geany
+                            podrás probar el código haciendo click en el botón de “ejecutar” desde dentro de la
+                            aplicación. Lo que podrás ver en el video de explicación del ejercicio.
+                        </p>
+                        <p>
+                            Actualmente Google Chrome acapara la mayoría de usuarios y Firefox e Internet Explorer/Edge
+                            están relegados a un segundo plano. Esto no quiere decir que lo debemos dejar totalmente de
+                            lado ya que incluso una minoría que puede proporcionarnos puede resultar muy importante para
+                            nosotros.
+                        </p>
+                        <p>
+
+
+                            ¿Cómo ver la página que hicimos?
+                        </p>
+                        <p>
+                            Una vez guardado el fichero con extensión .html, para abrir la página en el navegador,
+                            simplemente tienes que acceder a la carpeta donde has guardado el archivo y darle un doble
+                            clic. Se trata de una tarea sencilla que estamos seguros que podrás realizar. Si no lo
+                            consigues, fíjate que la mayoría de los navegadores tienen un menú. En el menú de "Archivo"
+                            de tu navegador preferido encontrarás una opción como "Abrir archivo", desde donde también
+                            podrás abrir una página realizada por ti con tu editor de código.
+                        </p>
+                        <p>
+                            Una vez abierto el archivo podés ver tu primera página web. Algo sencillita pero por algo se
+                            empieza. Seguramente en poco tiempo seremos capaces de mejorar sensiblemente.
+                        </p>
+                        <p>
+                            En la parte superior izquierda de la ventana del navegador puedes comprobar la presencia del
+                            texto delimitado por la etiqueta TITLE. Esta es una de las funciones de esta etiqueta, cuyo
+                            principal cometido es el de servir de referencia en los motores de búsqueda como Google.
+                        </p>
+                        <p>
+                            Por otro lado, los elementos que colocamos entre la etiqueta BODY, y su cierre, se pueden
+                            ver en el espacio reservado para el cuerpo de la página.
+                        </p>
+                        <p>
+                            Si hacés click con el botón derecho sobre la página y elegís "Ver código fuente de la
+                            página" o "Inspeccionar" en una ventana accesoria aparece el código de nuestro archivo HTML.
+                            Este recurso es de extremada importancia, ya que nos permite ver el tipo de técnicas
+                            empleadas por otros para la confección de sus páginas.
+                        </p>
+                        <p>
+                            Una vez que hicimos esta práctica podemos ya profundizar en la descripción de algunas de las
+                            etiquetas más empleadas del HTML.
+
+
+
+                        </p><br>
+                        <p id="fuente">Fuente: Curso Fullstack Phyton del programa Codo a Codo</p>
+                        <hr>
+                    </article>
+                    <div class="final">
+                        <a href="u1sintaxis.html"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="#titulo"><i class="fa-solid fa-arrow-up"></i></a>
+                        <a href="u1parrafos.html"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="pagina-d">
+
+                    <nav>
+                        <h4>Indice de contenidos</h4><br>
+                        <hr><br>
+                        <ul>
+                            <!--target="_blank" para abrir en otra pagina continuandoel href-->
+                            <li><a href="u1internet.html">1. Internet</a></li>
+                            <ul>
+                                <li><a href="u1comofunciona.html">1.1. Como funciona Internet</a></li>
+                                <li><a href="u1protocolo.html">1.2. Protocolo TCP-IP</a></li>
+                            </ul>
+
+                            <li><a href="u1html.html">2. Html</a></li>
+                            <ul>
+
+                                <li><a href="u1sintaxis.html">2.1. Sintaxis</a></li>
+                                <li><a href="u1ejercicio.html">2.2. Primer ejercicio</a></li>
+                                <li><a href="u1parrafos.html">2.3. Parrafos</a></li>
+                                </ol>
+                                </ol>
+                    </nav>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <a href="index.html">Ir a la pagina principal</a>
+            <p>Diseñado por Grupo16 del curso de fullstack phyton del programa codo a codo</p>
+
+
+            <p>Copyright 2022</p>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

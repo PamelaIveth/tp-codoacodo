@@ -1,0 +1,272 @@
+/* paginas html */
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffaafb' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+   color: #000;
+  
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width:90%;
+    margin: auto;
+}
+
+/* navegador */
+.nav-main{
+    font-size: 17px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 20px 0; 
+
+}
+
+.nav-icono{
+    width: 100px;
+}
+.nav-main ul{
+    display:flex;
+
+}
+.nav-main ul li{
+    padding: 20px;
+
+}
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #000;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 50px;
+}
+
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 40px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+
+/* intro info */
+.intro{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+           
+}
+
+
+.internet{
+    box-shadow: 0 0 20px 0 rgba(165, 161, 161, 0.3);
+    padding: 1.5em;
+    background: 
+    #e6c5c7;
+    margin: 1em;
+}
+.internet h1{
+    font-size: 40px;
+}
+.internet a:hover{
+    text-decoration: underline;
+}
+.pagina-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0;
+}
+.contenidos{
+    box-shadow: 0 0 20px 0 rgba(165, 161, 161, 0.3);
+    padding: 1.5em;
+    background: #ffffff;
+    margin: 1em;
+    font-size: 16px;
+}
+.pagina-principal .unidad1,
+.pagina-principal .unidad2{
+    box-shadow: 0 0 20px 0 rgba(165, 161, 161, 0.3);
+    padding: 1.5em;
+    background: #ffffff;
+    margin: 1em;
+    font-size: 16px;
+}
+
+.unidad1 ul,
+.unidad2 ul{
+    text-align: left;
+    
+    padding-left: 1em;
+}
+.unidad1 ul a:hover,
+.unidad2 ul a:hover{
+    text-decoration: underline;
+}
+.unidad1 h4,
+.unidad2 h4{
+    border-bottom: 1px solid
+    #e6c5c7;
+    padding: 0.7em;
+    
+}
+
+.paginas{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    margin: 10px 0;
+   
+}
+
+.pagina-i{
+    box-shadow: 0 0 20px 0 rgba(165, 161, 161, 0.3);
+    padding: 1.5em;
+    background: #ffffff;
+    margin: 1em;
+    font-size: 15px;
+}
+
+.pagina-i h4{
+    padding: 1em;
+}
+.pagina-i p{
+    padding: 1em;
+    
+}
+
+#code{
+    color:
+    blue;
+}
+#subcode{
+    color:
+    rgb(70, 224, 245);
+}
+
+#sub-code{
+    color:orange;
+}
+#ali{
+    color: red;
+}
+.pagina-d{
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: 0 0 20px 0 rgba(165, 161, 161, 0.3);
+    height: 400px;
+   width: 300px;
+    background: #ffffff;
+    
+    
+}
+
+
+.pagina-d ul{
+    text-align: left;
+    
+    padding-left: 1em;
+}
+.pagina-d ul a:hover{
+    text-decoration: underline;
+}
+
+#fuente{
+    color:grey;
+}
+.ejemplos{
+    text-align:right ;
+padding: 1em;
+font-size: 16px;
+}
+
+.final{
+    text-align: right;
+    padding: 1.5em;
+}
+.final i{
+    padding: 1em;
+}
+
+/* pie de pagina */
+.footer,
+.footer a{
+    background: #201f25;
+    color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+/* responsive */
+@media (max-width:700px){
+
+    .menu-btn{
+        display: block;
+    }
+    .nav-main ul.nav-menu{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffaafb' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+      height: 100%;
+      padding: 30px;
+      opacity: .9;
+      transform: translateX(-400px);
+      transition: transform .5s ease-in-out
+    }
+
+    .nav-main ul.nav-menu.show{
+       transform: translateX(-50px); 
+    }
+    .nav-main ul.nav-menu li{
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .paginas{
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-d {
+        height: 100%;
+    }
+    .pagina-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+}  
+@media (max-width:1000px){
+    .pagina-d{
+        height: 400px;
+    }
+}

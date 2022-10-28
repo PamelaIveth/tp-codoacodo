@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="icon" href="code.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+
+        <nav class="nav-main">
+            <img id="titulo" src="icono.png" class="nav-icono" alt="Icono">
+            <ul class="nav-menu">
+                <li><a href="index.html"><b>Inicio</b></a></li>
+                <li><a href="contenido.html"><b>Html</b></a></li>
+                <li><a href=""><b>Css</b></a></li>
+                <li><a href=""><b>Java Script</b></a></li>
+                <li><a href=""><b>Git/Git Hub</b></a></li>
+            </ul>
+        </nav>
+
+
+        <section class="intro">
+            <div class="internet">
+                <p><a href="contenido.html" class="unidad">Introducción a HTML</a> / Unidad 2</p>
+                <h1>5. Imágenes en HTML</h1><br>
+            </div>
+            <div class="paginas">
+                <div class="pagina-i">
+                    <article>
+                        <p>
+                            Imágenes en HTML
+                        </p>
+                        <p>
+                            Atributos básicos para imágenes en HTML.
+                        </p>
+                        <p>
+                            La etiqueta que utilizaremos para insertar una imagen es IMG (image). Esta etiqueta no posee
+                            su cierre correspondiente y en ella hemos de especificar obligatoriamente el paradero de
+                            nuestro archivo gráfico mediante el atributo src (source).
+                        </p>
+                        <p>
+                            La sintaxis queda entonces de la siguiente forma:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">img</span><span id="subcode"> src</span>= <span id="sub-code">"logo.png"</span>&gt;</code>
+
+                        </p>
+                        <p>
+                            Para expresar el camino, lo haremos de la misma forma que vimos para los enlaces. Las reglas
+                            siguen siendo las mismas, lo único que cambia es que, en lugar de una página destino, el
+                            destino es un archivo gráfico. En el código anterior estamos enlazando con un archivo con
+                            extensión .png, pero podrá ser otro tipo de archivo como .gif o .jpg.
+                        </p>
+                        <p>
+                            Aparte de este atributo, indispensable obviamente para la visualización de la imagen, la
+                            etiqueta IMG nos propone otra serie de atributos de mayor o menor utilidad, que listamos a
+                            continuación:
+                        </p>
+                        <p>
+                            Atributo alt
+                        </p>
+                        <p>
+                            Dentro de las comillas de este atributo colocaremos una brevísima descripción de la imagen.
+                            Esta etiqueta no es indispensable pero presenta varias utilidades. La sintaxis te quedaría
+                            de esta manera:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">img</span><span id="subcode"> src</span>=<span id="sub-code">"logo.png"</span><span id="subcode"> alt</span>= <span id="sub-code">"Descripción del logo o imagen"</span>&gt;</code>
+
+                        </p>
+                        <p>
+                            Primeramente, sirve para el posicionamiento de la página en buscadores. De los atributos alt
+                            el buscador puede extraer palabras clave y le ayuda a entender qué función o contenido tiene
+                            la imagen, y por lo tanto la página.
+                        </p>
+                        <p>
+                            Otra utilidad importante la encontramos en determinadas aplicaciones, usadas por personas
+                            con problemas visuales. Navegadores especiales, por ejemplo, no muestran las imágenes y por
+                            ende alt ofrece la posibilidad de leerlas. Nunca está de más pensar en crear páginas
+                            contemplando accesibilidad para cualquier navegante.
+                        </p>
+                        <p>
+                            Atributos height y width
+                        </p>
+                        <p>
+                            Estos atributos definen la altura y anchura respectivamente de la imagen en píxeles. Aunque
+                            estas dimensiones forman parte del estilo de la imagen, y por tanto podrían ir en el CSS,
+                            todavía puede ser interesante definirlas dentro del HTML.
+                        </p>
+                        <p>
+                            Todos los archivos gráficos poseen unas dimensiones de ancho y alto. Estas dimensiones
+                            pueden obtenerse a partir del propio diseñador gráfico o bien haciendo clic con el botón
+                            derecho sobre la imagen, vista desde el explorador de archivos de tu ordenador, para luego
+                            elegir “propiedades” o “información de la imagen” sobre el menú que se despliega.
+                        </p>
+                        <p>
+                            Un ejemplo de etiqueta IMG con sus valores de anchura y altura declarados te quedaría así:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">img</span><span id="subcode"> src</span>=<span id="sub-code">"logo.gif"</span><span id="subcode"> width</span>=<span id="sub-code">"200"</span><span id="subcode"> height</span>=<span id="sub-code">"300"</span>&gt;</code>
+
+
+                        </p>
+                        <p>
+                            Cuando las dimensiones de las imágenes han sido proporcionadas, durante el proceso de carga,
+                            el navegador reservará el espacio correspondiente a cada imagen creando una maquetación
+                            correcta.
+                        </p>
+                        <p>
+                            Además de esta utilidad, el alterar los valores de estos dos atributos, es una forma
+                            inmediata de redimensionar nuestra imagen. Este tipo de utilidad no es siempre aconsejable
+                            dado que, si lo que pretendemos es aumentar el tamaño, la pérdida de calidad de la imagen
+                            será sensible. Inversamente, si deseamos disminuir su tamaño, estaremos usando un archivo
+                            más pesado en KB de lo necesario para la imagen que estamos mostrando con lo que aumentamos
+                            el tiempo de descarga de nuestro documento innecesariamente.
+                        </p>
+                        <p>
+                            Imágenes que son enlaces y el atributo border
+                        </p>
+                        <p>
+                            Ya hablamos sobre que una imagen puede servir de enlace. Vista la estructura de los enlaces
+                            en HTML, podemos muy fácilmente adivinar el tipo de código necesario:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">a</span><span id="subcode"> href</span>= <span id="sub-code">"archivo.html"</span>&gt;</code><code>&lt;<span id="code">img</span><span id="subcode"> src</span>= <span id="sub-code">"imagen.jpg"</span>&gt;</code>
+                            <code>&lt;<span id="code">/a</span>&gt;</code>
+
+
+                        </p>
+                        <p>
+                            El problema de hacer esto en ciertos navegadores es que se crea un borde en la imagen, del
+                            mismo color que el color configurado para los enlaces, lo que suele ser un efecto poco
+                            deseado.
+                        </p>
+                        <p>
+                            Sin embargo, en HTML podemos indicar que una imagen tenga o no borde. Mediante el atributo
+                            “border” se define el tamaño en píxeles del cuadro que rodea la imagen. De esta forma
+                            podemos encuadrar nuestra imagen si lo deseamos. No es algo que se use mucho, pero resulta
+                            particularmente útil cuando deseamos eliminar el borde que aparece cuando la imagen sirve de
+                            enlace. En dicho caso tendremos que especificar border="0".
+                        </p>
+                        <p>
+                            Aunque de cualquier modo, ese borde se puede eliminar igualmente con CSS y será la manera
+                            correcta de hacerlo, porque no olvidemos que el borde es un estilo.
+                        </p>
+                        <p>
+                            Atributos vspace y hspace
+                        </p>
+                        <p>
+                            Sirven para indicar el espacio libre, en pixeles, que tiene que colocarse entre la imagen y
+                            los otros elementos que la rodean, como texto, otras imágenes, etc. Estos atributos forman
+                            parte también de la responsabilidad de CSS, así que no sería recomendable usarlos.
+
+
+                        </p><br>
+                        <p id="fuente">Fuente: Curso Fullstack Phyton del programa Codo a Codo</p>
+                        <hr>
+                    </article>
+                    <div class="final">
+                        <a href="u2formatografico.html"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="#titulo"><i class="fa-solid fa-arrow-up"></i></a>
+                        <a href="u2favicon.html"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="pagina-d">
+
+                    <nav>
+                        <h4>Indice de contenidos</h4><br>
+                        <hr><br>
+                        <ul>
+                            <!--target="_blank" para abrir en otra pagina continuandoel href-->
+                            <li><a href="u2formatotexto.html">1. Formato de texto</a></li>
+                            <li><a href="u2atributo.html">2. Atributo de páginas</a></li>
+                            <li><a href="u2enlaces.html">3. Enlaces</a></li>
+                            <li><a href="u2formatografico.html">4. Formatos gráficos</a></li>
+                            <li><a href="u2imagenes.html">5. Imágenes en HTML</a></li>
+                            <ul>
+
+                                <li><a href="u2favicon.html">5.1. Favicon</a></li>
+                            </ul>
+                            <li><a href="u2listas.html">6. Listas</a></li>
+                            <li><a href="u2tablas.html">7. Tablas</a></li>
+                            <li><a href="u2iframes.html">8. Iframe</a></li>
+                            <li><a href="u2elementos.html">9. Elementos en bloque y en línea</a></li>
+                            <li><a href="u2formularios.html">10. Formularios en HTML</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <a href="index.html">Ir a la pagina principal</a>
+            <p>Diseñado por Grupo16 del curso de fullstack phyton del programa codo a codo</p>
+
+
+            <p>Copyright 2022</p>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

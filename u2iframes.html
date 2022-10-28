@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="icon" href="code.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+
+        <nav class="nav-main">
+            <img id="titulo" src="icono.png" class="nav-icono" alt="Icono">
+            <ul class="nav-menu">
+                <li><a href="index.html"><b>Inicio</b></a></li>
+                <li><a href="contenido.html"><b>Html</b></a></li>
+                <li><a href=""><b>Css</b></a></li>
+                <li><a href=""><b>Java Script</b></a></li>
+                <li><a href=""><b>Git/Git Hub</b></a></li>
+            </ul>
+        </nav>
+
+
+        <section class="intro">
+            <div class="internet">
+                <p><a href="contenido.html" class="unidad">Introducción a HTML</a> / Unidad 2</p>
+                <h1>8. Iframe</h1><br>
+            </div>
+            <div class="paginas">
+                <div class="pagina-i">
+                    <article>
+                        <p>
+                            Etiqueta Iframe
+                        </p>
+                        <p>
+                            Los frames (en inglés, marcos) son herramientas que han pasado a ser soportadas por todos
+                            los navegadores y forman parte de las especificaciones de HTML, para luego retirarse de
+                            nuevo del estándar en HTML5.
+                        </p>
+                        <p>
+                            No obstante, los frames, han permanecido en uso y dentro del estándar con la etiqueta IFRAME
+                            que vamos a ver a continuación, que aún hoy tiene mucha utilidad.
+                        </p>
+                        <p>
+                            En concreto iframe sirve para crear un espacio dentro de la página donde se puede incrustar
+                            otra web. Es un cuadrado cuyas dimensiones debe especificar el desarrollador en la propia
+                            página, incluidas por los atributos width y height en la propia etiqueta IFRAME.
+                        </p>
+                        <p>
+                            El iframe tiene asociada una página web, que se carga en el espacio y operará de manera
+                            totalmente independiente. Esa página web tendrá sus propios contenidos y estilos. Además
+                            será perfectamente funcional: si tiene enlaces se mostrarán en ese mismo espacio y si tiene
+                            scripts o aplicaciones dentro se ejecutarán también de manera autónoma en el espacio
+                            reservado al iframe.
+                        </p>
+                        <p>
+                            Iframe se utiliza en muchos contextos. Dentro de un iframe podemos mostrar contenidos de
+                            otras páginas, como si estuvieran en la nuestra, por lo que sirven para ejemplos como:
+                        </p>
+                        <p>
+                            Visualizar contenidos de terceros, como bloques de noticias o novedades que ofrecen en otras
+                            webs.
+                        </p>
+                        <p>
+                            Interfaces de usuario, en el que ciertas actividades se realizan de forma autónoma y el
+                            procesamiento está en otra página web.
+                        </p>
+                        <p>
+                            Incrustar videos de YouTube.
+                        </p>
+                        <p>
+                            Incrustar mapas de Google Maps.
+                        </p>
+                        <p>
+                            Banners de publicidad desde otro sitio.
+                        </p>
+                        <p>
+                            Construcción de la etiqueta iframe
+                        </p>
+                        <p>
+                            Como decimos, el iframe se coloca directamente en el código HTML, en el lugar donde queremos
+                            que aparezca.
+                        </p>
+                        <p>
+                            Se coloca con un código como este:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">iframe</span><span id="subcode"> src</span>= <span id="sub-code">"pagina_fuente.html"</span><span id="subcode"> width</span>= <span id="sub-code">"290"</span><span id="subcode"> height</span>= <span id="sub-code">"250"</span>&gt;</code>Texto para cuando el navegador no
+                            conoce la etiqueta iframe<code>&lt;<span id="code">/iframe</span>&gt;</code>
+
+
+                            
+                        </p>
+                        <p>
+                            Los atributos principales de iframe son la página web que se va a mostrar en el espacio y el
+                            ancho y alto del recuadro que reservemos para el frame flotante.
+                        </p>
+                        <p>
+                            La etiqueta iframe tiene su correspondiente etiqueta de cierre. Todo el texto que coloquemos
+                            entre la etiqueta de inicio y la de cierre es texto alternativo, que sólo se mostrará en
+                            caso que el navegador del visitante no acepte la etiqueta iframe.
+                        </p>
+                        <p>
+                            Atributos de iframe
+                        </p>
+                        <p>
+                            Atributos disponibles para la etiqueta iframe. No obstante, cabe ya señalar que algunos de
+                            los atributos que vamos a ver se engloban más en el terreno de los estilos y por tanto se
+                            podrían, y sería más correcto, especificar dentro de las CSS.
+                        </p>
+                        <p>
+                            src: Para indicar la página web que se mostrará en el espacio del frame flotante.
+                        </p>
+                        <p>
+                            width: Para definir la anchura del recuadro del iframe.
+                        </p>
+                        <p>
+                            height: Para definir la altura del iframe.
+                        </p>
+                        <p>
+                            name: Para especificar el nombre del frame, que podemos utilizar luego para referirnos a él
+                            con el target de los links, o mediante javascript.
+                        </p>
+                        <p>
+                            id: Para indicar el identificador del iframe, y poder referirnos a él desde javascript.
+                        </p>
+                        <p>
+                            frameborder: para definir si queremos o no que haya un borde en el frame. Los valores
+                            posibles son 0 | 1. frameborder=0 indicaría que no queremos borde y frameborder=1 que sí.
+                        </p>
+                        <p>
+                            scrolling: indica si se quiere que aparezcan barras de desplazamiento para ver los
+                            contenidos del iframe completo, en el caso que no aparezcan en el espacio reservado para el
+                            iframe. Los valores posibles son: yes | no | auto. El valor "yes" es para que aparezcan
+                            siempre las barras de desplazamiento o barras de scroll, "no" sirve para que no aparezcan
+                            nunca y "auto" es para que aparezcan sólo cuando son necesarias (es el valor por defecto).
+                        </p>
+                        <p>
+                            marginwidth: Para definir el margen a izquierda y derecha que debe tener la página que va
+                            dentro del iframe, con respecto al borde. Este margen va en pixels, pero prevalecerá el
+                            margen que pueda tener asignada la página web que mostremos en el frame flotante.
+                        </p>
+                        <p>
+                            marginheight: lo mismo que marginwidth, pero en este caso para el tamaño del margen por la
+                            parte de arriba y abajo.
+                        </p>
+                        <p>
+                            margin: para especificar alineación del frame, igual que se especifica para las imágenes.
+                        </p>
+                        <p>
+                            style y class: los atributos para definir el aspecto del iframe por medio de hojas de estilo
+                            css.
+                        </p>
+                        <p>
+                            Para acabar, aquí vemos otro ejemplo de iframe con unos cuantos atributos más:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">iframe</span><span id="subcode"> name</span>= <span id="sub-code">miframeflotante</span><span id="subcode"> src</span>= <span id="sub-code">"colabora.html"</span><span id="subcode"> width</span>= <span id="sub-code">400</span><span id="subcode"> height</span>= <span id="sub-code">550</span><span id="subcode"> frameborder</span>= <span id="sub-code">"0"</span><span id="subcode"> scrolling</span>= <span id="sub-code">yes</span><span id="subcode"> marginwidth</span>= <span id="sub-code">2</span><span id="subcode"> marginheight</span>= <span id="sub-code">4</span><span id="ali"> aling</span>= <span id="sub-code"> left</span>&gt;</code>Tu navegador no soporta
+                            frames!<code>&lt;<span id="code">/iframe</span>&gt;</code>
+
+                            
+                        </p>
+                        <p>
+                            Es de destacar, que pueden existir páginas web que tengan bloqueados los accesos desde
+                            páginas web externas para mostrar un iframe con información de ese sitio.
+
+
+                        </p><br>
+
+                        <p id="fuente">Fuente: Curso Fullstack Phyton del programa Codo a Codo</p>
+                        <hr>
+                    </article>
+                    <div class="final">
+                        <a href="u2tablas.html"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="#titulo"><i class="fa-solid fa-arrow-up"></i></a>
+                        <a href="u2elementos.html"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="pagina-d">
+
+                    <nav>
+                        <h4>Indice de contenidos</h4><br>
+                        <hr><br>
+                        <ul>
+                            <!--target="_blank" para abrir en otra pagina continuandoel href-->
+                            <li><a href="u2formatotexto.html">1. Formato de texto</a></li>
+                            <li><a href="u2atributo.html">2. Atributo de páginas</a></li>
+                            <li><a href="u2enlaces.html">3. Enlaces</a></li>
+                            <li><a href="u2formatografico.html">4. Formatos gráficos</a></li>
+                            <li><a href="u2imagenes.html">5. Imágenes en HTML</a></li>
+                            <ul>
+
+                                <li><a href="u2favicon.html">5.1. Favicon</a></li>
+                            </ul>
+                            <li><a href="u2listas.html">6. Listas</a></li>
+                            <li><a href="u2tablas.html">7. Tablas</a></li>
+                            <li><a href="u2iframes.html">8. Iframe</a></li>
+                            <li><a href="u2elementos.html">9. Elementos en bloque y en línea</a></li>
+                            <li><a href="u2formularios.html">10. Formularios en HTML</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <a href="index.html">Ir a la pagina principal</a>
+            <p>Diseñado por Grupo16 del curso de fullstack phyton del programa codo a codo</p>
+
+
+            <p>Copyright 2022</p>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <link rel="icon" href="code.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+
+        <nav class="nav-main">
+            <img id="titulo" src="icono.png" class="nav-icono" alt="Icono">
+            <ul class="nav-menu">
+                <li><a href="index.html"><b>Inicio</b></a></li>
+                <li><a href="contenido.html"><b>Html</b></a></li>
+                <li><a href=""><b>Css</b></a></li>
+                <li><a href=""><b>Java Script</b></a></li>
+                <li><a href=""><b>Git/Git Hub</b></a></li>
+            </ul>
+        </nav>
+
+
+        <section class="intro">
+            <div class="internet">
+                <p><a href="contenido.html" class="unidad">Introducción a HTML</a> / Unidad 1</p>
+                <h1>2.3. Párrafos</h1><br>
+            </div>
+            <div class="paginas">
+                <div class="pagina-i">
+                    <article>
+                        <p> Formato de párrafos en HTML</p>
+                        <p>
+
+                            Veremos cómo utilizar párrafos y saltos de línea en páginas web. Incluiré también los
+                            encabezados como párrafos que sirven de título.
+                        </p>
+                        <p>
+                            Anteriormente hemos presentado a título de ejemplo algunas etiquetas que permiten dar
+                            formato a nuestro texto.
+                        </p>
+                        <p>
+                            Dar formato a un texto pasa por tareas tan evidentes como definir los párrafos,
+                            justificarlos, introducir viñetas, numeraciones o bien poner en negrita, itálica, etc.
+                        </p>
+                        <p>
+                            Hemos visto que para definir los párrafos nos servimos de la etiqueta P que introduce un
+                            salto y deja una línea en blanco antes de continuar con el resto del documento.
+                        </p>
+                        <p>
+                            Podemos también usar la etiqueta BR, de la cual no existe su cierre correspondiente (/BR),
+                            para realizar un simple salto de línea con lo que no dejamos una renglón en blanco sino que
+                            solo nos posicionamos en el renglón siguiente.
+                        </p>
+                        <p>
+                            <em> Nota: existen otras etiquetas que no tienen su correspondiente cierre, como IMG para
+                                las
+                                imágenes, que veremos más adelante. Esto ocurre porque un salto de línea o una imagen no
+                                empiezan y acaban más adelante sino que sólo se colocan y ya tienen su propio
+                                funcionamiento. </em>
+                        </p>
+                        <p>
+                            Los párrafos delimitados por etiquetas P pueden ser fácilmente alineados a la izquierda,
+                            centro, derecha o justificados especificando dicha alineación en el interior de la etiqueta
+                            por medio de un atributo "align".
+                        </p>
+                        <p>
+                            Un atributo, es entonces, un parámetro incluído en el interior de la etiqueta que ayuda a
+                            definir el funcionamiento de la etiqueta de una forma más personalizada. Veremos una gran
+                            cantidad de atributos muy útiles para todo tipo de etiquetas.
+                        </p>
+                        <p>
+                            <em>
+                                Recordatorio: HTML se usa para definir el contenido. Por tanto, los atributos align
+                                actualmente ya no se usan en HTML, porque están definiendo la estética con la que un
+                                párrafo
+                                debe de representarse y no el contenido. Actualmente toda la definición estética se
+                                realiza
+                                bajo el código CSS, que sirve para definir el estilo, la forma.
+                            </em>
+                        </p>
+                        <p>
+                            Así, si deseamos introducir un texto alineado a la izquierda escribiríamos:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p </span><span id="ali">align</span>=<span id="sub-code"> "left"</span>&gt;</code>Texto
+                            alineado a la izquierda<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            Para una justificación al centro:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p </span><span id="ali">align</span>=<span id="sub-code"> "center"</span>&gt;</code>Texto
+                            alineado al centro<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            Para alinear a la derecha:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p </span><span id="ali">align</span>=<span id="sub-code"> "right"</span>&gt;</code>Texto
+                            alineado a la derecha<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            En cada caso mencionado, el atributo align toma determinados valores que son escritos entre
+                            comillas. En algunas ocasiones necesitamos especificar algunos atributos para el correcto
+                            funcionamiento de la etiqueta. En otros casos, el propio navegador toma un valor definido
+                            por
+                            defecto. Para el caso de align, el valor por defecto es left.
+                        </p>
+                        <p>
+                            El atributo align no es exclusivo de la etiqueta P. Otras etiquetas muy comunes, que veremos
+                            más
+                            adelante, entre las cuales se introducen texto o imágenes, suelen hacer uso de este atributo
+                            de
+                            una forma habitual.
+                        </p>
+                        <p>
+                            Imaginemos un texto relativamente largo donde todos los párrafos están alineados a la
+                            izquierda
+                            (por ejemplo). Una forma de simplificar nuestro código y de evitar introducir continuamente
+                            el
+                            atributo align sobre cada una de nuestras etiquetas es utilizando la etiqueta DIV.
+                        </p>
+                        <p>
+                            Esta etiqueta, DIV, por sí sola no sirve para nada, salvo producir un salto de línea simple.
+                            Para que realmente se vea tiene que estar acompañada de algún estilo definido en el CSS o de
+                            atributos del HTML como align y lo que nos permite es alinear cualquier elemento (párrafo o
+                            imagen) de la manera que nosotros deseemos.
+                        </p>
+                        <p>
+                            Así, el código:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p </span><span id="ali">align</span>=<span id="sub-code"> "left"</span>&gt;</code>Parrafo1<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p </span><span id="ali">align</span>=<span id="sub-code"> "left"</span>&gt;</code>
+                            Parrafo3<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p </span><span id="ali">align</span>=<span id="sub-code"> "left"</span>&gt;</code>
+                            Parrafo2<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            es equivalente a:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">div </span><span id="ali">align</span>=<span id="sub-code"> "left"</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p</span>&gt;</code>Parrafo1<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p</span>&gt;</code>Parrafo2<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p</span>&gt;</code>Parrafo3<code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">/div</span>&gt;</code>
+                        </p>
+                        <p>
+                            <em> Nota: no es correcto utilizar align en una etiqueta DIV, por el mismo motivo que no es
+                                correcto
+                                utilizarlo en un párrafo.
+                            </em>
+                        </p>
+                        <p>
+                            Como hemos visto, la etiqueta DIV marca divisiones en las que definimos un bloque de
+                            contenido,
+                            y a los que podríamos aplicar estilo de manera global, aunque lo correcto sería aplicar ese
+                            estilo del lado del CSS.
+                        </p>
+                        <p>
+                            Ejemplo práctico:
+                        </p>
+                        <p>
+                            Para practicar un poco lo que acabamos de ver vamos a proponer un ejercicio que podés
+                            resolver
+                            en tu PC. Simplemente queremos construir una página que tenga:
+                        </p>
+                        <p>
+                            1 salto de línea triple
+                        </p>
+                        <p>
+                            1 párrafo alineado a la izquierda
+                        </p>
+                        <p>
+                            2 Párrafos centrados
+                        </p>
+                        <p>
+                            3 Párrafos alineados a la derecha
+                        </p>
+                        <p>
+                            El código fuente del ejercicio, con lo que sabemos hasta ahora, podría tener la siguiente
+                            forma:
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">!DOCTYPE<span id="subcode"> html</span></span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">html</span><span id="subcode"> lang</span>= <span id="sub-code">"en"</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">head</span>&gt;</code><br>
+
+
+                            <code>&lt;<span id="code">meta</span><span id="subcode"> charset</span>= <span id="sub-code">"UTF-8"</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">title</span>&gt;</code>parrafos<code>&lt;<span id="code">/title</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">/head</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">body</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">p </span><span id="ali">align</span>=<span id="sub-code"> "center"</span>&gt;</code>
+                        </p>
+
+                        <p>Ejemplo de formatear parrafos</p>
+
+                        <p> <code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+
+                            <code>&lt;<span id="code">p </span><span id="ali">align</span>=<span id="sub-code"> "center"</span>&gt;</code>
+                        </p>
+                        <p>Esto es el resultado:</p>
+
+                        <p><code>&lt;<span id="code">/p</span>&gt;</code></p>
+
+                        <p>
+                            <code>&lt;<span id="code">div </span><span id="ali">align</span>=<span id="sub-code"> "right"</span>&gt;</code>
+                            <br>
+                            <code>&lt;<span id="code">p</span>&gt;</code>
+                            <br>
+
+
+                            Qué son los buscadores que no tienen porque mantener un índice y que tienen robots
+                            que constantemente recorren Internet en busca de nuevas páginas para incluirlas en
+                            el buscador. <br>
+
+                            <code>&lt;<span id="code">/p</span>&gt;</code>
+
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p</span>&gt;</code><br>
+
+
+                            Imaginemos un texto relativamente largo donde todos los párrafos están alineados a
+                            la izquierda (por ejemplo). <br>
+
+                            <code>&lt;<span id="code">/p</span>&gt;</code>
+                        </p>
+                        <p>
+
+                            <code>&lt;<span id="code">p</span>&gt;</code><br>
+
+                            Qué son los buscadores que no tienen porque mantener un índice y que tienen robots
+                            que constantemente recorren Internet en busca de nuevas páginas para incluirlas en
+                            el buscador. Estos buscadores suelen tener un formulario accesible desde la página
+                            inicial, con el enlace correspondiente. No hay que navegar las categorías para
+                            acceder al formulario. <br>
+
+                            <code>&lt;<span id="code">/p</span>&gt;</code><br>
+
+
+                            <code>&lt;<span id="code">/div</span>&gt;</code>
+
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">br</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">br</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">br</span>&gt;</code>
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">p</span>&gt;</code><br>
+
+
+                            Aquí finaliza la web. <br>
+
+                            <code>&lt;<span id="code">/p</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">/body</span>&gt;</code>
+
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">/html</span>&gt;</code>
+
+                        </p>
+                        <p>
+                            Encabezados
+                        </p>
+                        <p>
+                            Existen otras etiquetas para definir párrafos especiales, que harán las veces de títulos.
+                            Son
+                            los encabezados o headings en inglés. Como decimos, son etiquetas que formatean el texto
+                            como un
+                            titular, pero el hecho de que cambien el formato no es lo que nos tiene que preocupar, sino
+                            el
+                            significado en sí de la etiqueta. Es cierto que los navegadores asignan un tamaño mayor de
+                            letra
+                            y colocan el texto en negrita, pero lo importante es que sirven para definir la estructura
+                            del
+                            contenido de un documento HTML. Entre otras cosas, los motores de búsqueda sabrán
+                            interpretar
+                            mejor el contenido de una página en función de los titulares y subtitulares.
+                        </p>
+                        <p>
+                            Hay varios tipos de encabezados, que se diferencian visualmente en el tamaño de la letra que
+                            utilizan. La etiqueta en concreto es la H1, para los encabezados más grandes, H2 para los de
+                            segundo nivel y así hasta H6 que es el encabezado más pequeño. Pero lo importante,
+                            insistimos,
+                            es la estructura que denotan. Una página tendrá generalmente un encabezado de nivel 1 y
+                            dentro
+                            varios de nivel 2. Luego, dentro de los H2 encontraremos si acaso H3, etc. Nunca debemos
+                            usar
+                            los encabezados porque nos formatean el texto de una manera dada, sino porque nuestro
+                            documento
+                            lo requiera según su estructura.
+                        </p>
+                        <p>
+                            Los encabezados implican también una separación en párrafos, así que todo lo que escribamos
+                            dentro de H1 y su cierre (o cualquier otro encabezado) se colocará en un párrafo
+                            independiente.
+                        </p>
+                        <p>
+                            Podemos ver cómo se presentan algunos encabezados a continuación.
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">h1</span>&gt;</code>
+                            Encabezado de nivel 1<code>&lt;<span id="code">/h1</span>&gt;</code>
+
+                        </p>
+                        <p>
+                            Los encabezados, como otras etiquetas de HTML, soportan el atributo align. Vemos un ejemplo
+                            de
+                            encabezado de nivel 2 alineado al centro, aunque repetimos que este formato estético debería
+                            hacerse desde CSS.
+                        </p>
+                        <p>
+                            <code>&lt;<span id="code">h2 </span><span id="ali">align</span>=<span id="sub-code"> "center"</span>&gt;</code>Encabezado
+                            de nivel 2<code>&lt;<span id="code">/h2</span>&gt;</code>
+                        </p>
+                        <p>
+                            Otro ejercicio interesante es construir una página web que contenga todos los encabezados
+                            posibles. Se puede ver a continuación.
+                        </p>
+                        <p>
+
+                            <code>&lt;<span id="code">!DOCTYPE<span id="subcode"> html</span></span>&gt;</code><br>
+
+
+                            <code>&lt;<span id="code">html</span><span id="subcode"> lang</span>= <span id="sub-code">"en"</span>&gt;</code>
+                        </p>
+                        <p>
+
+                            <code>&lt;<span id="code">head</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">meta</span><span id="subcode"> charset</span>= <span id="sub-code">"UTF-8"</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">title</span>&gt;</code>headings<code>&lt;<span id="code">/title</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">/head</span>&gt;</code>
+                        </p>
+                        <p>
+
+                            <code>&lt;<span id="code">body</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">h1</span>&gt;</code>Encabezado de nivel
+                            1<code>&lt;<span id="code">/h1</span>&gt;</code><br>
+                            <code>&lt;<span id="code">h2</span>&gt;</code>Encabezado de nivel
+                            2<code>&lt;<span id="code">/h2</span>&gt;</code><br>
+                            <code>&lt;<span id="code">h3</span>&gt;</code>Encabezado de nivel
+                            3<code>&lt;<span id="code">/h3</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">h4</span>&gt;</code>Encabezado de nivel
+                            4<code>&lt;<span id="code">/h4</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">h5</span>&gt;</code>Encabezado de nivel
+                            5<code>&lt;<span id="code">/h5</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">h6</span>&gt;</code>Encabezado de nivel
+                            6<code>&lt;<span id="code">/h6</span>&gt;</code><br>
+
+                            <code>&lt;<span id="code">body</span>&gt;</code>
+                        </p>
+                        <p>
+
+                            <code>&lt;<span id="code">/html</span>&gt;</code>
+                        </p>
+                          <div class="ejemplos">  
+                            
+                            <a href="tp1.rar"><i class="fa-solid fa-download"></i></a>
+                            <a href="tp1.rar"><i class="fa-solid fa-folder-arrow-down"></i></a>
+                            <a href="tp1.rar">Descarga ejemplos Html</a>
+
+                       </div>
+                        <p id="fuente">Fuente: Curso Fullstack Phyton del programa Codo a Codo</p>
+                        <hr>
+                    </article>
+                    <div class="final">
+                        <a href="u1ejercicio.html"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="#titulo"><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                </div>
+                <div class="pagina-d">
+
+                    <nav>
+                        <h4>Indice de contenidos</h4><br>
+                        <hr><br>
+                        <ul>
+                            <!--target="_blank" para abrir en otra pagina continuandoel href-->
+                            <li><a href="u1internet.html">1. Internet</a></li>
+                            <ul>
+                                <li><a href="u1comofunciona.html">1.1. Como funciona Internet</a></li>
+                                <li><a href="u1protocolo.html">1.2. Protocolo TCP-IP</a></li>
+                            </ul>
+
+                            <li><a href="u1html.html">2. Html</a></li>
+                            <ul>
+
+                                <li><a href="u1sintaxis.html">2.1. Sintaxis</a></li>
+                                <li><a href="u1ejercicio.html">2.2. Primer ejercicio</a></li>
+                                <li><a href="u1parrafos.html">2.3. Párrafos</a></li>
+                                </ol>
+                                </ol>
+                    </nav>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <a href="index.html">Ir a la pagina principal</a>
+            <p>Diseñado por Grupo16 del curso de fullstack phyton del programa codo a codo</p>
+
+
+            <p>Copyright 2022</p>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
